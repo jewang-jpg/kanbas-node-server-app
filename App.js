@@ -56,8 +56,12 @@ if (process.env.NODE_ENV !== "development") {
   };
 }
 app.use(session(sessionOptions));
-
 app.use(express.json());
+app.use((req, res, next) => {
+  console.log("Request URL:", req.method, req.url);
+  console.log("Session Data:", req.session);
+  next();
+});
 
 HelloRoutes(app);
 Lab5(app);

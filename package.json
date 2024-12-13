@@ -1,21 +1,29 @@
 {
   "type": "module",
-  "name": "kanbas-node-server-app-cs5610-fa24",
+  "name": "kanbas-node-server-app",
   "version": "1.0.0",
-  "description": "HTTP Server integrating with a React front end",
+  "description": "Node.js HTTP Web server for Kanbas application",
   "main": "index.js",
   "scripts": {
-    "start": "node App.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
   },
-  "author": "Dong Chen",
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP",
+    "Web",
+    "Development",
+    "CS5610",
+    "CS4550"
+  ],
   "license": "ISC",
   "dependencies": {
-    "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
-    "session": "^0.1.0"
+    "mongoose": "^8.8.3"
   }
 }
